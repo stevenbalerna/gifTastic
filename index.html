@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>NBAGifTastic</title>
 </head>
+
 <body>
-    
-</body>
+
+    <div class="contaner">
+
+        <div class="players">
+            <h1 class="text-center"><strong>ALL-NBA GIF Team</strong> </h1>
+
+            <div id="buttons"></div>
+
+            <form id="express-form">
+            <label for="entry-input"><strong>Add a player</strong></label>
+            <input type="text" id="entry-input">
+            
+            
+            <input id="addEntry" type="submit" value="Submit">
+            </form>
+
+            <div id="entryView" data-state="still"></div>
+        </div>
+        <div id="entrydiv"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="gifTastic.js"></script>
+    </body>
+
 </html>
