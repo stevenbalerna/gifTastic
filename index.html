@@ -13,28 +13,34 @@
 <body>
 
     <div class="contaner">
+        <div class="d-flex align-items-center">
+            <div class="col-lg-12">
+                <div class="jumbotron jumbotron-fluid text-center text-white bg-primary">
+                    <div class="container">
+                        <h1 class="text-center"><strong>All-NBA GIF Team</strong></h1>
+                    </div>
+                </div>
+                <div class="players">
+                    <div id="buttons"></div>
 
-        <div class="players">
-            <h1 class="text-center"><strong>ALL-NBA GIF Team</strong> </h1>
+                    <form id="express-form">
+                        <label for="entry-input"><strong>Add a player</strong></label>
+                        <input type="text" id="entry-input">
 
-            <div id="buttons"></div>
+                        <input id="addEntry" type="submit" value="Submit">
 
-            <form id="express-form">
-            <label for="entry-input"><strong>Add a player</strong></label>
-            <input type="text" id="entry-input">
-            
-            
-            <input id="addEntry" type="submit" value="Submit">
-            </form>
+                        <div id="entryView" data-state="still"></div>
+                        <div id="ratingsView"></div>
 
-            <div id="entryView" data-state="still"></div>
+                </div>
+                <div id="entrydiv"></div>
+            </div>
         </div>
-        <div id="entrydiv"></div>
-    </div>
+        </form>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="gifTastic.js"></script>
-    </body>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="gifTastic.js"></script>
+</body>
 
 </html>

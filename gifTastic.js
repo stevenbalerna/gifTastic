@@ -40,15 +40,16 @@ $(document).ready(function () {
                             var imageView = results[j].images.fixed_height.url;
                             var still = results[j].images.fixed_height_still.url;
 
+                            //something to pull the rating
+                            var rating = results[j].rating;
+                            var displayRating = $('<p>').text("Rating " + rating);
+                            $('#ratingsView').prepend(displayRating);
                             var entryImage = $('<img>').attr("src", still).attr('data-animate', imageView).attr('data-still', still);
                             entryImage.attr('data-state', 'still');
                             $('#entryView').prepend(entryImage);
                             entryImage.on('click', playGif);
 
-                            //something to pull the rating
-                            var rating = results[j].rating;
-                            var displayRating = $('<p>').text("Rating " + rating);
-                            $('#entryView').prepend(displayRating);
+                           
                         }
                     });  // response function
 
