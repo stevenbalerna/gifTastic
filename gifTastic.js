@@ -48,7 +48,7 @@ $(document).ready(function () {
                             //something to pull the rating
                             var rating = results[j].rating;
                             var displayRating = $('<p>').text("Rating " + rating);
-                            $('entryView').prepend(displayRating);
+                            $('#entryView').prepend(displayRating);
                         }
                     });  // response function
 
