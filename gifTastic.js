@@ -23,7 +23,7 @@ $(document).ready(function () {
 
             var players = $(this).html();
 
-            var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + players + "&api_key=P43NACn6c3K90N1gZHgD3PNnEnm8NTTt&limit=10";
+            var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + players + "&api_key=P43NACn6c3K90N1gZHgD3PNnEnm8NTTt&limit=10";
             // console.log(queryURL);
             $.ajax({
                     url: queryURL,
